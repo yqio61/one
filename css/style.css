@@ -24,6 +24,13 @@ ul, li{
     padding: 0 10px;
 }
 
+.mt-8{
+    margin-top: 8px;
+}
+.mb-24{
+    margin-bottom: 24px;
+}
+
 .mb-50{
     margin-bottom: 50px;
 }
@@ -79,6 +86,61 @@ ul, li{
     align-items: center;
 }
 
+.burger {
+    display         : none;
+    position        : relative;
+    width           : 80px;
+    height          : 43px;
+    border          : none;
+    padding         : 0;
+    background-color: transparent;
+    cursor          : pointer
+}
+
+.burger-line {
+    position         : absolute;
+    left             : 0;
+    top              : 50%;
+    width            : 100%;
+    height           : 4px;
+    border-radius    : 1px;
+    background-color : #000;
+    transform        : translateY(-50%)
+}
+
+.burger::before {
+    position          : absolute;
+    content           : "";
+    top               : 0;
+    left              : 0;
+    width             : 100%;
+    border-radius     : 1px;
+    height            : 4px;
+    background-color  : #000;
+    transition        : transform .3s ease-in-out, top .3s ease-in-out;
+    transition        : transform .3s ease-in-out, top .3s ease-in-out, -webkit-transform .3s ease-in-out
+}
+
+.burger::after {
+    position          : absolute;
+    content           : "";
+    bottom            : 0;
+    left              : 0;
+    width             : 100%;
+    border-radius     : 1px;
+    height            : 4px;
+    background-color  : #000;
+    transition        : transform .3s ease-in-out, bottom .3s ease-in-out;
+    transition        : transform .3s ease-in-out, bottom .3s ease-in-out, -webkit-transform .3s ease-in-out
+}
+
+.stop-scroll {
+    overflow: hidden;
+}
+
+.not-active{
+    display: none;
+}
 
 
 .menu-list {
@@ -170,19 +232,33 @@ ul, li{
     color: #000000;
 }
 
-.section-wrapper {
+/* .section-wrapper {
     max-width : 1342px;
+    margin: 0 auto;
+    padding: 0 10px;
+} */
+
+.section-wrapper {
+    max-width : 1097px;
     margin: 0 auto;
     padding: 0 10px;
 }
 
 
-.section-title{
+/* .section-title{
     font-family: 'Myriad Pro Semibold';
     font-size  : 101px;
     color      : #1898F3;
     text-align : center;
+} */
+
+.section-title{
+    font-family: 'Roboto';
+    font-size  : 88px;
+    color      : #1898F3;
+    text-align : center;
 }
+
 
 .section-text{
     font-family: 'Myriad Pro Regular';
@@ -335,6 +411,7 @@ ul, li{
     color: #A0A0A0;
 }
 
+
 .slogan-wrapper {
     max-width      : 1185px;
     margin: 0 auto 140px;
@@ -353,7 +430,7 @@ ul, li{
 
 /* footer */
 
-.footer {
+/* .footer {
     font-family: "Inter", sans-serif;
     font-size  : 22px;
     line-height: 30px;
@@ -437,67 +514,154 @@ ul, li{
 
 .copyright a:hover {
     color: #0E53FF;
+} */
+
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+.footer-title{
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 16px;
+}
+.footer-link{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 16px;
+    color: #1898F3;
+    text-decoration: underline;
+}
+.footer-content-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+
+
 
 
 /* text style */
 
-.title-content{
+/* .title-content{
     margin-bottom: 300px;
+    position: relative;
+} */
+
+.title-content{
+    margin-bottom: 120px;
     position: relative;
 }
 
-.title-content::before{
+
+/* .title-content::before{
     position: absolute;
     left: -200px;
     top: 0;
     content : url(../images/gr-big.png);
     z-index: -1;
     filter: blur(18px);
-}
+} */
+
+/* .title-block{
+    margin-bottom: 68px;
+    display: flex;
+    justify-content: center;
+} */
 
 .title-block{
-    margin-bottom: 68px;
+    margin-bottom: 32px;
     display: flex;
     justify-content: center;
 }
 
-.title-block-title{
+
+/* .title-block-title{
     font-family: 'Myriad Pro Bold';
     font-size: 130px;
     color: #1898F3;
     margin: 0 0 0 50px;
+} */
+
+.title-block-title{
+font-family: "Roboto", sans-serif;
+    font-size: 120px;
+    font-weight: 700;
+    color: #1898F3;
+    margin: 0 0 0 44px;
 }
 
-.titlt-block-img{
+
+/* .titlt-block-img{
     width: 130px;
     height: 130px;
+} */
+
+.titlt-block-img{
+    width: 150px;
+    height: 150px;
 }
 
-.title-block-text{
+
+/* .title-block-text{
     font-family: 'Myriad Pro Regular';
     font-size: 35px;
     line-height: 43px;
     color: #A0A0A0;
     text-align: center;
+} */
+
+.title-block-text{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #A0A0A0;
+    text-align: center;
 }
 
-.quote-inner{
+
+/* .quote-inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 200px;
     position: relative;
+} */
+
+.quote-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;
+    position: relative;
 }
 
-.quote-inner::after{
+
+/* .quote-inner::after{
     position: absolute;
     left: 60vw;
     top: 0;
     content : url(../images/gr-big.png);
     z-index: -1;
     filter: blur(18px);
+} */
+
+.quote-inner::after{
+    position: absolute;
+    left: 40vw;
+    top: 0;
+    content : url(../images/gr-big-flag.png);
+    z-index: -1;
+    filter: blur(18px);
 }
+
 
 
 .quote-block{
@@ -507,68 +671,132 @@ ul, li{
     margin-bottom: 23px;
 }
 
-.quote-block-title{
+/* .quote-block-title{
     font-family: 'Myriad Pro Semibold';
     font-size: 39px;
     line-height: 39px;
     color: #1898F3;
+} */
+
+.quote-block-title{
+    font-family: "Roboto", sans-serif;;
+    font-size: 18px;
+    line-height: 140%;
+    color: #1898F3;
 }
 
-.quote-img{
+
+/* .quote-img{
     width: 220px;
     height: 220px;
     background-color: #1898F3;
     border-radius: 50%;
     margin: 0;
+} */
+
+.quote-img{
+    width: 132px;
+    height: 132px;
+    background-color: #1898F3;
+    border-radius: 50%;
+    margin: 0;
 }
 
-.quote-img-img{
+
+/* .quote-img-img{
     width: 220px;
     height: 220px;
     border-radius: 50%;
+} */
+
+.quote-img-img{
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
 }
 
-.quote-block-text{
+/* .quote-block-text{
     font-family: 'Myriad Pro Regular';
     font-size: 60px;
     line-height: 65px;
     color: #555658;
     margin-left: 76px;
+} */
+
+.quote-block-text{
+    font-family: 'Roboto';
+    font-size: 32px;
+    line-height: 150%;
+    color: #1898F3;
+    margin-left: 64px;
 }
 
-.quote-const{
+
+/* .quote-const{
     max-width: 1000px;
     margin-bottom: 200px;
+} */
+
+.quote-const{
+    max-width: 800px;
+    margin-bottom: 120px;
 }
 
-.quote-const-text{
+
+/* .quote-const-text{
     font-family: 'Myriad Pro Semibold';
     font-size: 60px;
     line-height: 65px;
     color: #1898F3;
     margin: 0 0 40px 0;
+} */
+
+.quote-const-text{
+    font-family: 'Roboto';
+    font-size: 24px;
+    line-height: 130%;
+    color: #555658;
+    margin: 0 0 24px 0;
 }
 
-.quote-const-pruf{
+
+/* .quote-const-pruf{
     font-family: 'Myriad Pro Regular';
     font-size: 20px;
     line-height: 43px;
     color: #A0A0A0 ;
+} */
+
+.quote-const-pruf{
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 130%;
+    color: #A0A0A0 ;
+    margin-bottom: 24px;
 }
 
-.info-inner{
+
+/* .info-inner{
     margin-bottom: 243px;
+    position: relative;
+} */
+
+.info-inner{
+    margin-bottom: 120px;
     position: relative;
 }
 
-.info-inner::before{
+
+/* .info-inner::before{
     position: absolute;
     left: -200px;
     top: 0;
     content : url(../images/gr-big.png);
     z-index: -1;
     filter: blur(18px);
-}
+} */
+
+
 
 
 .info-title{
@@ -579,39 +807,81 @@ ul, li{
     margin-bottom: 112px;
 }
 
-.info-item{
+/* .info-item{
     display: flex;
     justify-content: left;
     margin-bottom: 65px;
+} */
+
+.info-item{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 40px;
 }
+
 
 .info-item-block{
     margin-left: 37px;
 }
 
-.info-item-title{
+/* .info-item-title{
     font-family: 'Myriad Pro Semibold';
 font-size: 76px;
 color: #1898F3;
 margin: 0;
+} */
+
+.info-item-title{
+    font-family: 'Roboto';
+font-size: 32px;
+font-weight: 600;
+line-height: 130%;
+color: #1898F3;
+margin: 0;
 }
 
-.info-item-text{
+
+/* .info-item-text{
     font-family: 'Myriad Pro Regular';
 font-size: 45px;
 line-height: 53px;
 color: #555658;
 margin-top: 45px;
+} */
+
+.info-item-text{
+    font-family: 'Roboto';
+font-size: 24px;
+line-height: 130%;
+font-weight: 400;
+color: #555658;
+margin-top: 16px;
 }
+
+
+/* .nb{
+    position: relative;
+    text-decoration: underline solid #1898F3;
+} */
 
 .nb{
     position: relative;
-    text-decoration: underline solid #1898F3;
+    font-weight: 600;
 }
-.nb::before{
+
+
+/* .nb::before{
     position: absolute;
     left    : -40px;
     content : url(../images/nb.png);
+} */
+
+.nb::before{
+    width: 6px;
+    height: 25px;
+    position: absolute;
+    left    : -20px;
+    content : url(../images/nb1.png);
 }
 
 
@@ -620,12 +890,16 @@ margin-top: 45px;
     margin-bottom: 7px;
 }
 
+.line{
+    list-style-type: "-";
+}
+
 .info-item-list.mb-25 li {
     margin-bottom: 25px;
 }
 
 
-.info-item-btn{
+/* .info-item-btn{
     width: 64px;
     height: 64px;
 background-image: url(../images/btn.png);
@@ -635,7 +909,20 @@ border: none;
 border-radius: 50%;
 background-color: #FFFFFF;
 cursor: pointer;
+} */
+
+.info-item-btn{
+    width: 40px;
+    height: 40px;
+background-image: url(../images/btn.png);
+background-position: center;
+background-repeat: no-repeat;
+border: none;
+border-radius: 50%;
+background-color: #FFFFFF;
+cursor: pointer;
 }
+
 
 .color-gray{
     color: #A0A0A0
