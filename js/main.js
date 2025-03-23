@@ -17,14 +17,36 @@ $('.slider-carousel').slick({
 });
 
 
+// $(function() {
+//   $('.burger').on('click', function() {
+//       $(this).toggleClass('active');
+//       $('body').toggleClass('stop-scroll');
+//       $('.menu').toggleClass('visible');
+//   })
+//   $('.menu-link, .menu-list').on('click', function() {
+//       $('.burger').removeClass('active');
+//       $('.menu').removeClass('visible');
+//   })
+// })
+
+
 $(function() {
   $('.burger').on('click', function() {
-      $(this).toggleClass('active');
-      $('body').toggleClass('stop-scroll');
-      $('.menu').toggleClass('visible');
-  })
+    $(this).toggleClass('active');
+    $('body').toggleClass('stop-scroll');
+    $('.menu').toggleClass('visible');
+    
+    // Добавление/удаление эффекта размытия для main
+    $('.main').css('filter', function(_, currentValue) {
+      return currentValue === 'blur(10px)' ? '' : 'blur(10px)';
+    });
+  });
+
   $('.menu-link, .menu-list').on('click', function() {
-      $('.burger').removeClass('active');
-      $('.menu').removeClass('visible');
-  })
-})
+    $('.burger').removeClass('active');
+    $('.menu').removeClass('visible');
+    
+    // Убираем размытие при закрытии меню
+    $('.main').css('filter', '');
+  });
+});
