@@ -19,7 +19,7 @@ ul, li{
 }
 
 .wrapper {
-    max-width: 1710px;
+    max-width: 1097px;
     margin   : 0 auto;
     padding: 0 10px;
 }
@@ -303,6 +303,9 @@ ul, li{
     text-align: center;
 }
 
+.title-media{
+    display: none;
+}
 
 
 .slider-carousel{
@@ -534,15 +537,45 @@ ul, li{
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 16px;
+    padding-left: 35px;
     color: #1898F3;
     text-decoration: underline;
+}
+
+.footer-link:hover{
+    color: #0E53FF;
+    transition: .7s;
 }
 .footer-content-block{
     display: flex;
     flex-direction: column;
     justify-content: end;
 }
+.footer-list{
+    padding-left: 0;
+}
+.footer-list-item{
+    position: relative;
+}
 
+.tg::before {
+    position: absolute;
+    left    : 0;
+    top: 4px;
+    content : url(../images/tg.png);
+}
+.mail::before {
+    position: absolute;
+    left    : 0;
+    top: 4px;
+    content : url(../images/mail.png);
+}
+.site::before {
+    position: absolute;
+    left    : 0;
+    top: 4px;
+    content : url(../images/site.png);
+}
 
 
 
@@ -657,9 +690,8 @@ font-family: "Roboto", sans-serif;
     position: absolute;
     left: 40vw;
     top: 0;
-    content : url(../images/gr-big-flag.png);
+    content : url(../images/georgian_flag.png);
     z-index: -1;
-    filter: blur(18px);
 }
 
 
@@ -700,6 +732,9 @@ font-family: "Roboto", sans-serif;
     background-color: #1898F3;
     border-radius: 50%;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -710,8 +745,8 @@ font-family: "Roboto", sans-serif;
 } */
 
 .quote-img-img{
-    width: 132px;
-    height: 132px;
+    width: 109px;
+    height: 109px;
     border-radius: 50%;
 }
 
