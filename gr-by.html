@@ -21,6 +21,10 @@
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="./css/slick-theme.css">
     <link rel="stylesheet" href="./css/slick.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -40,6 +44,10 @@
                     <a class="lang-link active" href="#!">BY</a>
                     <a class="lang-link" href="#!">RU</a>
                 </div>
+                <button class="burger" aria-label="Open menu" aria-expanded="false">
+                    <span class="burger-line"></span>
+                </button>
+    
             </div>
         </div>
     </header>
@@ -65,9 +73,9 @@
             <div class="section-wrapper">
                 <div class="quote-inner">
                     <div class="quote-block">
-                        <div class="quote-img"><img class="quote-img-img" src="./images/svetlana.png" alt="Svetlana">
+                        <div class="quote-img"><img class="quote-img-img" src="./images/author.png" alt="Author">
                         </div>
-                        <h3 class="quote-block-title">Светлана Головнева</h3>
+                        <h3 class="quote-block-title">Арганізатар акцыі</h3>
                     </div>
                     <div class="quote-block">
                         <p class="quote-block-text">“У Сакартвэла ўсё проста: прыходзіш і праводзіш акцыю. Мы адказалі
@@ -81,11 +89,12 @@
         <section>
             <div class="section-wrapper">
                 <div class="quote-const">
-                    <p class="quote-const-text">Калі сход ладзіцца не ў месцах руху транспарту і людзей, то ніякія
-                        ўзгадненні не патрэбныя. Вы можаце проста склікаць людзей. </p>
+                    <p class="quote-const-text"><b>Калі сход ладзіцца не ў месцах руху транспарту і людзей, то ніякія
+                            ўзгадненні не патрэбныя. Вы можаце проста склікаць людзей.</b> </p>
                     <p class="quote-const-text">Калі ж ваша мерапрыемства перашкодзіць дарожнаму руху, пра яго трэба
                         паведаміць мясцовай адміністрацыі*. </p>
                     <p class="quote-const-pruf">*ст. 21 Конституции Грузии Свобода собраний (23.03.2018 N2071)</p>
+                    <p class="quote-const-text"><b>Менавіта гэтую працэдуру мы і апішам.</b> </p>
                 </div>
             </div>
         </section>
@@ -93,7 +102,6 @@
         <section>
             <div class="section-wrapper">
                 <div class="info-inner">
-                    <h2 class="info-title">Менавіта гэтую працэдуру мы і апішам.</h2>
                     <div class="info-item">
                         <button class="info-item-btn" id="1">
                         </button>
@@ -129,7 +137,7 @@
                             </h3>
                             <p class="quote-const-pruf">*П. 2 арт. 8</p>
                             <div class="info-item-text display-none">
-                                <ul class="info-item-list mb-50">
+                                <ul class="info-item-list mb-24">
                                     <li>Форма собрания,</li>
                                     <li>цель,</li>
                                     <li>место проведения и маршрут,</li>
@@ -137,8 +145,9 @@
                                     <li>ожидаемое количество участников,</li>
                                     <li>форма скорой помощи:
                                         <ul class="info-item-list">
-                                            <li>будет ли дежурить карета на месте собрания?</li>
-                                            <li>сможет ли при необходимости проехать к участникам через перекрытые
+                                            <li class="line mt-8">будет ли дежурить карета на месте собрания?</li>
+                                            <li class="line">сможет ли при необходимости проехать к участникам через
+                                                перекрытые
                                                 дороги?</li>
                                         </ul>
                                     </li>
@@ -146,11 +155,11 @@
                                         телефона,</li>
                                     <li>дата и время подачи уведомления.</li>
                                 </ul>
-                                <p class="color-gray mb-50">Заявитель может сам быть ответственным лицом на собрании, а
+                                <p class="color-gray mb-24">Заявитель может сам быть ответственным лицом на собрании, а
                                     может передать эту задачу другим. Если он эту задачу передает, то к уведомлению
                                     нужно добавить:</p>
 
-                                <ul class="info-item-list color-gray mb-50">
+                                <ul class="info-item-list color-gray mb-24">
                                     <li>имена и фамилии ответственных лиц,</li>
                                     <li>их адреса,</li>
                                     <li>номера телефонов,</li>
@@ -187,17 +196,19 @@
                             <div class="info-item-text display-none">
                                 <p><b>1. Улады могуць змяніць месца і час сходу.</b> Гэта яны вырашаюць у першыя <b>3
                                         дні</b> пасля атрымання апавяшчэння.</p>
-                                <p></p>
-                                <ul class="info-item-list mb-50">Змены прапануюць, калі:
+                                <p>Змены прапануюць, калі:</p>
+                                <ul class="info-item-list mb-24">
                                     <li>Сход пагражае нармальнай працы мясцовых арганізацый.</li>
                                     <li>На гэты час і месца ўжо запланавалі мерапрыемства раней.</li>
                                 </ul>
-                                <p class="color-gray mb-50">Калі цягам трох дзён пасля падачы апавяшчэння вам не прыйшло
-                                    ані прапановы па зменах, ані адмовы – значыць, усё ўзгоднена, можна праводзіць сход,
-                                    як планавалі.</p>
-                                <p><b>2. Улады могуць забараніць сход.</b> Але толькі калі паліцыя мае дакладную
+                                <p class="mb-24"><b>2. Улады могуць забараніць сход.</b> Але толькі калі паліцыя мае
+                                    дакладную
                                     інфармацыю, што гэты сход створыць пагрозу канстытуцыйнаму ладу краіны, жыццю і
                                     здароўю грамадзян.</p>
+                                <p class="nb mb-24"><b>Калі цягам трох дзён пасля падачы апавяшчэння вам не прыйшло
+                                        ані прапановы па зменах, ані адмовы – значыць, усё ўзгоднена, можна праводзіць
+                                        сход,
+                                        як планавалі.</b></p>
                             </div>
                         </div>
 
@@ -211,14 +222,17 @@
                                 На сходах нельга
                             </h3>
                             <div class="info-item-text display-none">
-                                <ul class="info-item-list mb-25 semibold">
-                                    <li>Праносіць небяспечнае: зброю, выбухоўку, слезацечныя і атрутныя рэчывы і г.д.</li>
+                                <ul class="info-item-list mb-25">
+                                    <li>Праносіць небяспечнае: зброю, выбухоўку, слезацечныя і атрутныя рэчывы і г.д.
+                                    </li>
                                     <li>Мець алкаголь.</li>
-                                    <li>Заклікаць да звяржэння канстытуцыйнага строю праз гвалт, замахі на незалежнасць краіны і яе цэласнасць.</li>
+                                    <li>Заклікаць да звяржэння канстытуцыйнага строю праз гвалт, замахі на незалежнасць
+                                        краіны і яе цэласнасць.</li>
                                     <li>Прапагандаваць вайну і гвалт, распальваць варожасць.</li>
                                     <li>Блакаваць уваходы ў будынкі, на аўтамагістралі і чыгунку.</li>
                                     <li>Наўмысна перашкаджаць руху транспарту.</li>
-                                    <li>Блакаваць і шкодзіць прасторы і збудаванні гістарычнай, архітэктурнай, навуковай значнасці.</li>
+                                    <li>Блакаваць і шкодзіць прасторы і збудаванні гістарычнай, архітэктурнай, навуковай
+                                        значнасці.</li>
                                 </ul>
                             </div>
                         </div>
@@ -251,44 +265,27 @@
     </main>
 
     <footer class="footer">
-        <div class="wrapper">
+        <div class="section-wrapper">
             <div class="footer-content">
-                <div class="footer-content__block">
-                    <div class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed diam.
-                    </div>
-                    <div class="footer-inner">
-                        <div class="footer-inner-column">
-                            <h4>Lorem, ipsum.</h4>
-                            <ul>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                            </ul>
-                        </div>
-                        <div class="footer-inner-column">
-                            <h4>Lorem, ipsum.</h4>
-                            <ul>
-                                <li style="position: relative;"> <a class="phone" href="tel:+37000000000">+370 000 00
-                                        000</a>
-                                </li>
-                                <li style="position: relative;">
-                                    <a class="mail" href="mailto:example@example.com">example@example.com</a>
-                                </li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, aperiam!</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="footer-content-block">
+                    <h3 class="footer-title">Кантакты для звароту:</h3>
+                    <ul class="footer-list">
+                        <li class="footer-list-item">                    <a  href="#!" class="footer-link tg">https://t.me/zvarot96</a>
+                        </li>
+                        <li class="footer-list-item">                    <a href="#!" class="footer-link mail">zvarot@spring96.org</a>
+                        </li>
+                        <li class="footer-list-item">                    <a href="#!"
+                            class="footer-link site">https://spring96.org/</a>
+    </li>
+                    </ul>
+                </div>
+                <div class="footer-content-block">
+                    <a class="footer-link" href="#!" style="padding: 20px 0 10px 10px;"><b>Creative Common License</b></a>
                 </div>
             </div>
-            <div class="footer-content__block copyright">
-                <div>&#169;2025 Lorem ipsum - Все права защищены</div>
-                <a href="#!">Политика конфиденциальности</a>
-            </div>
         </div>
-
     </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./js/slick.js"></script>
     <script src="./js/main.js"></script>
