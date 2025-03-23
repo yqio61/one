@@ -949,7 +949,7 @@ cursor: pointer;
 .info-item-btn{
     width: 40px;
     height: 40px;
-background-image: url(../images/btn.png);
+background-image: url(../images/btn-arrow.png);
 background-position: center;
 background-repeat: no-repeat;
 border: none;
@@ -964,7 +964,9 @@ cursor: pointer;
 }
 
 .rotate{
-    transform: rotate(90deg) !important;
+    /* transform: rotate(90deg) !important; */
+    transform: rotate(151deg) !important;
+
     transition: .4s;
 }
 
