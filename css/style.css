@@ -390,6 +390,7 @@ li {
 .expert-item {
     width     : 424px;
     text-align: center;
+    margin-bottom: 60px;
 }
 
 .expert-pic {
