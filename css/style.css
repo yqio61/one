@@ -871,15 +871,8 @@ li {
     margin-bottom: 112px;
 }
 
-/* .info-item{
-    display: flex;
-    justify-content: left;
-    margin-bottom: 65px;
-} */
 
 .info-item {
-    /* display        : flex;
-    justify-content: left; */
     margin-bottom: 40px;
 }
 
@@ -888,12 +881,6 @@ li {
     margin-left: 37px;
 }
 
-/* .info-item-title{
-    font-family: 'Myriad Pro Semibold';
-font-size: 76px;
-color: #1898F3;
-margin: 0;
-} */
 
 .info-item-title {
     font-size  : 32px;
@@ -904,13 +891,6 @@ margin: 0;
 }
 
 
-/* .info-item-text{
-    font-family: 'Myriad Pro Regular';
-font-size: 45px;
-line-height: 53px;
-color: #555658;
-margin-top: 45px;
-} */
 
 .info-item-text {
     font-size  : 24px;
@@ -920,11 +900,22 @@ margin-top: 45px;
     margin-top : 16px;
 }
 
+.info-item-text ul{
+    margin-bottom: 24px;;
 
-/* .nb{
-    position: relative;
-    text-decoration: underline solid #1898F3;
-} */
+}
+
+.info-item-text p{
+    margin-bottom: 24px;
+}
+
+.info-item-text ul> li{
+    list-style      : disc;
+
+}
+
+
+
 
 .nb {
     position   : relative;
@@ -932,11 +923,6 @@ margin-top: 45px;
 }
 
 
-/* .nb::before{
-    position: absolute;
-    left    : -40px;
-    content : url(../images/nb.png);
-} */
 
 .nb::before {
     width   : 6px;
@@ -947,18 +933,18 @@ margin-top: 45px;
 }
 
 
-.info-item-list li {
-    list-style      : disc;
-    /* margin-bottom: 7px; */
-}
+/* .info-item-list li {
+    list-style      : disc; 
+    /* /* margin-bottom: 7px;
+}*/
 
-.line {
+/* .line {
     list-style-type: "-";
-}
+} */
 
-.info-item-list.mb-25 li {
+/* .info-item-list.mb-25 li {
     margin-bottom: 25px;
-}
+} */
 
 
 /* .info-item-btn{
