@@ -105,8 +105,16 @@
 
     .title-inner,
     .expert-list,
-    .slogan-wrapper{
+    .slogan-wrapper,
+    .quote-const,
+    .info-inner,
+    .quote-inner,
+    .title-content    {
         margin-bottom: 50px;
+    }
+
+    .header {
+        margin: 30px 10px 50px 10px;
     }
 
     .title-media {
@@ -138,9 +146,9 @@
 }
 
 @media(max-width: 900px) {
-    .header {
+    /* .header {
         margin: 30px 10px 100px 10px;
-    }
+    } */
 
     .footer-content__block {
         flex-wrap    : wrap;
@@ -178,14 +186,13 @@
         margin-bottom: 30px;
     }
 
-    .title-content {
+    /* .title-content {
         margin-bottom: 100px;
-    }
+    } */
 
     .quote-inner {
         flex-wrap      : wrap;
         justify-content: center;
-        margin-bottom  : 100px;
     }
 
     .quote-img {
@@ -196,10 +203,10 @@
         margin: 0;
     }
 
-    .quote-const,
+    /* .quote-const,
     .info-inner {
         margin-bottom: 100px;
-    }
+    } */
 
 }
 
