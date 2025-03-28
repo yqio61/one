@@ -4,8 +4,8 @@ body {
 }
 
 
-h1{
-    margin: 0;
+h1 {
+    margin : 0;
     padding: 0;
 }
 
@@ -35,11 +35,11 @@ li {
     margin-top: 8px;
 }
 
-.mt-24px{
+.mt-24px {
     margin-top: 24px;
 }
 
-.mb-16{
+.mb-16 {
     margin-bottom: 16px;
 }
 
@@ -255,7 +255,7 @@ li {
 .lang-link.active {
     background-color: #0E53FF;
     align-items     : center;
-    color: #FFFFFF;
+    color           : #FFFFFF;
     border-radius   : 38px;
 }
 
@@ -330,13 +330,13 @@ li {
 }
 
 .slider-item {
-    max-width         : 250px;
-    height            : 550px;
-    border-radius     : 30px;
-    padding           : 60px 45px 28px 46px;
-    display           : flex !important;
-    flex-direction    : column;
-    justify-content   : space-between;
+    max-width      : 250px;
+    height         : 550px;
+    border-radius  : 30px;
+    padding        : 60px 45px 28px 46px;
+    display        : flex !important;
+    flex-direction : column;
+    justify-content: space-between;
 }
 
 .slider-item-blue {
@@ -668,12 +668,21 @@ li {
     text-align: center;
 } */
 
-.title-block-text {
+/* .title-block-text {
     font-weight: 400;
     font-size  : 18px;
     line-height: 25px;
     color      : #A0A0A0;
     text-align : center;
+} */
+
+.title-block p {
+    font-weight: 400;
+    font-size  : 18px;
+    line-height: 25px;
+    color      : #A0A0A0;
+    text-align : center;
+
 }
 
 
@@ -905,17 +914,18 @@ li {
     margin-top : 16px;
 }
 
-.info-item-text ul{
-    margin-bottom: 24px;;
+.info-item-text ul {
+    margin-bottom: 24px;
+    ;
 
 }
 
-.info-item-text p{
+.info-item-text p {
     margin-bottom: 24px;
 }
 
-.info-item-text ul> li{
-    list-style      : disc;
+.info-item-text ul>li {
+    list-style: disc;
 
 }
 
@@ -964,15 +974,22 @@ background-color: #FFFFFF;
 cursor: pointer;
 } */
 
+.info-add h3 {
+    margin         : 0;
+    text-decoration: underline;
+
+}
+
+
 .info-add-title-block,
 .info-item-title-block {
     display: flex;
 }
 
-.info-add-title {
+/* .info-add-title {
     margin         : 0;
     text-decoration: underline;
-}
+} */
 
 .info-item-btn {
     width              : 40px;
@@ -1009,6 +1026,11 @@ cursor: pointer;
 
 .info-add-text {
     margin-top: 24px;
+}
+
+.info-add-text li {
+    color        : #A0A0A0;
+    margin-bottom: 24px;
 }
 
 .color-gray {
@@ -1063,10 +1085,13 @@ cursor: pointer;
     text-align : center;
 }
 
-.group-item-text {
+
+.group-item p {
     font-size  : 24px;
     font-weight: 400;
+
 }
+
 
 .group-text {
     font-weight: 400;
@@ -1098,18 +1123,18 @@ cursor: pointer;
     justify-content: space-between;
     width          : 100%;
     margin-bottom  : 80px;
-    padding: 0;
+    padding        : 0;
 }
 
 
 .tabs__caption li:last-child:before {
-    content   : '';
-    position  : absolute;
-    bottom    : -5px;
-    left      : 0;
-    right     : -2px;
-    z-index   : -1;
-    height    : 5px;
+    content      : '';
+    position     : absolute;
+    bottom       : -5px;
+    left         : 0;
+    right        : -2px;
+    z-index      : -1;
+    height       : 5px;
     /* background: #7DCA86; */
 }
 
@@ -1120,7 +1145,7 @@ cursor: pointer;
 }
 
 .tabs__caption li {
-    width: 200px;
+    width           : 200px;
     color           : #A0A0A0;
     font-size       : 24px;
     line-height     : 130px;
@@ -1129,16 +1154,16 @@ cursor: pointer;
     position        : relative;
     border          : 1px solid #A0A0A0;
     border-radius   : 32px;
-    height: 63px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
+    height          : 63px;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    margin-bottom   : 30px;
 }
 
 .tabs__caption li:hover {
-    color       : #1898F3;
-    border          : 1px solid #1898F3 !important;
+    color : #1898F3;
+    border: 1px solid #1898F3 !important;
 }
 
 .tabs__caption li:not(.active) {
@@ -1151,9 +1176,9 @@ cursor: pointer;
 }
 
 .tabs__caption .active {
-    background  : transparent;
-    color: #1898F3;
-    border          : 1px solid #1898F3;
+    background: transparent;
+    color     : #1898F3;
+    border    : 1px solid #1898F3;
 }
 
 .tabs__caption .active:after {
@@ -1170,7 +1195,7 @@ cursor: pointer;
     display      : none;
     background   : transparent;
     border-radius: 32px;
-    padding      : 32px;
+    /* padding      : 32px; */
 }
 
 .tabs__content.active {
@@ -1205,38 +1230,87 @@ cursor: pointer;
     overflow: hidden;
 }
 
-.tabs__content-wrapper{
+.tabs__content-wrapper {
     display: flex;
 }
 
-.tabs__content-block{
+.tabs__content-block {
     background-color: #FFFFFF;
-    border-radius: 32px;
-    padding: 32px;
+    border-radius   : 32px;
+    padding         : 32px;
 }
 
-.tabs__content-title{
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 130%;
-    color: #555658;
+.tabs__content-title {
+    font-size    : 24px;
+    font-weight  : 600;
+    line-height  : 130%;
+    color        : #555658;
+    margin-bottom: 16px;
 }
 
-.tabs__content-text{
+.tabs__content-item p {
+    font-size    : 18px;
+    font-weight  : 400;
+    color        : #555658;
+    line-height  : 130%;
+    margin-bottom: 16px;
+}
+
+
+.tabs__content-item {
+    margin-bottom: 40px;
+}
+
+/* .tabs__content-text{
     font-size: 18px;
     font-weight: 400;
     color: #555658;
     line-height: 130%;
-}
+} */
 
-.tabs__content-text ul{
+.tabs__content-text ul {
     list-style: disc;
 }
 
-.tabs__content-link{
-    color: #1898F3;
+.tabs__content-link {
+    color          : #1898F3;
     text-decoration: underline;
 }
+
+.tab__content-small {
+    width           : 288px;
+    padding         : 32px;
+    font-size       : 16px;
+    color           : #555658;
+    line-height     : 130%;
+    background-color: #FFFFFF;
+    border-radius   : 32px;
+    height: fit-content;
+    margin: 0 0 32px 32px;
+}
+
+.tabs__content-small-inner{
+    display: flex;
+    flex-direction: column;
+}
+/* .tab__content-small p{
+    width: 288px;
+    padding: 32px;
+    font-size: 16px;
+    color: #555658;
+} */
+
+
+.tab__content-small-block {
+    display        : flex;
+    align-items    : center;
+}
+
+.tab__content-small-block h4 {
+    font-weight: 700;
+    margin-left: 10px;
+}
+
 
 @media screen and (max-width: 650px) {
     .tabs__caption li {
